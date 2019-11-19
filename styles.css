@@ -1,0 +1,25 @@
+#elephant-logo {
+
+}
+
+#left-column {
+  float: left;
+}
+
+.acct-item h4 {
+  display: inline;
+}
+
+.nav-image {
+  width: 82px;
+  height: 86px;
+  display: block;
+}
+
+#center-column {
+  float: left;
+}
+
+#right-column {
+  float: left;
+}
