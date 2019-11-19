@@ -6,119 +6,121 @@
   </head>
   <body>
     <nav id="left-column">
-      <img id="elephant-logo" src="assets/images/elephant.svg" />
+      <img id="elephant-logo" class="nav-image" src="assets/images/elephant.svg" />
       <img class="nav-image" src="assets/images/dashboard.svg" />
       <img class="nav-image" src="assets/images/profile.svg" />
       <img class="nav-image" src="assets/images/transactions.svg" />
     </nav>
-    <div id="center-column">
+    <main>
       <h1> Balancing Act </h1>
-      <header id="welcome-banner">
-        <button id="welcome-close"> x <button>
-        <h3 id="welcome-title"> Welcome Oscar! </h3>
-      </header>
-      <section id="account-details-cont">
-        <span id= "acct-income" class="acct-detail">
-          <h5 class="acct-detail-title"> Income </h5>
-          <p class="acct-detail-val"> $2119.12 </p>
-        </span>
-        <span id="acct-expenses" class="acct-detail">
-          <h5 class="acct-detail-title"> Expenses </h5>
-          <p class="acct-detail-val"> $420.54 </p>
-        </span>
-        <span id="credit-score" class="acct-detail">
-          <h5 class="acct-detail-title"> Credit Score </h5>
-          <p class="acct-detail-val"> $673 </p>
-        </span>
-      </section>
-      <section id="accounts-cont">
-        <h2 id="accounts-title"> Accounts</h2>
-        <button class="main-button"> MANAGE ACCOUNTS </button>
-        <ul id="accounts-list">
-          <li class="acct-item acct-saving">
-            <h4 class="acct-title"> Wells Fargo </h4>
-            <h4 class="acct-type"> Savings </h4>
-          </li>
-          <li class="acct-item acct-checking">
-            <h4 class="acct-title"> Wells Fargo </h4>
-            <h4 class="acct-type"> Checking </h4>
-          </li>
-          <li class="acct-item acct-credit">
-            <h4 class="acct-title"> Amazon Credit </h4>
-            <h4 class="acct-type"> Credit Card </h4>
-          </li>
-          <li class="account-item acct-credit">
-            <h4 class="account-title"> Southwest Credit </h4>
-            <h4 class="account-type"> Credit Card </h4>
-          </li>
-        </ul>
-      </section>
-    </div>
-    <div id="right-column">
-      <h2> Recent Transactions </h2>
-      <button id="new-transactions-title" class="main-button"> NEW Transactions </button>
-      <table id="transactions">
-        <tr>
-          <th id="trans-date-col">Date</th>
-          <th id="trans-payee-col">Payee</th>
-          <th id="trans-inflow-col">Inflow</th>
-          <th id="trans-outflow-col">Outflow</th>
-        </tr>
-        <tr>
-          <td class="transaction-date">Oct 25, 2019</td>
-          <td class="transaction-payee">Target</td>
-          <td class="transaction-inflow">-</td>
-          <td class="transaction-outflow">$82.35</td>
-        </tr>
-        <tr>
-          <td class="transaction-date">Oct 24, 2019</td>
-          <td class="transaction-payee">Express</td>
-          <td class="transaction-inflow">-</td>
-          <td class="transaction-outflow">$212.92</td>
-        </tr>
-        <tr>
-          <td class="transaction-date">Oct 22, 2019</td>
-          <td class="transaction-payee">Paycheck</td>
-          <td class="transaction-inflow">$1,319.12</td>
-          <td class="transaction-outflow">-</td>
-        </tr>
-        <tr>
-          <td class="transaction-date">Oct 21, 2019</td>
-          <td class="transaction-payee">Trader Joe's</td>
-          <td class="transaction-inflow">-</td>
-          <td class="transaction-outflow">$54.92</td>
-        </tr>
-        <tr>
-          <td class="transaction-date">Oct 20, 2019</td>
-          <td class="transaction-payee">Shell</td>
-          <td class="transaction-inflow">-</td>
-          <td class="transaction-outflow">$46.23</td>
-        </tr>
-        <tr>
-          <td class="transaction-date">Oct 19, 2019</td>
-          <td class="transaction-payee">Rent</td>
-          <td class="transaction-inflow">$800.00</td>
-          <td class="transaction-outflow">-</td>
-        </tr>
-        <tr>
-          <td class="transaction-date">Oct 19, 2019</td>
-          <td class="transaction-payee">Hapa Sushi</td>
-          <td class="transaction-inflow">-</td>
-          <td class="transaction-outflow">$13.97</td>
-        </tr>
-        <tr>
-          <td class="transaction-date">Oct 18, 2019</td>
-          <td class="transaction-payee">Pig Train</td>
-          <td class="transaction-inflow">-</td>
-          <td class="transaction-outflow">$4.83</td>
-        </tr>
-        <tr>
-          <td class="transaction-date">Oct 18, 2019</td>
-          <td class="transaction-payee">RTD</td>
-          <td class="transaction-inflow">-</td>
-          <td class="transaction-outflow">$6.00</td>
-        </tr>
-      </table>
-    </div>
+      <div id="center-column">
+        <header id="welcome-banner">
+          <button id="welcome-close"> x <button>
+          <h3 id="welcome-title"> Welcome Oscar! </h3>
+        </header>
+        <section id="account-details-cont">
+          <span id= "acct-income" class="acct-detail">
+            <h5 class="acct-detail-title"> Income </h5>
+            <p class="acct-detail-val"> $2119.12 </p>
+          </span>
+          <span id="acct-expenses" class="acct-detail">
+            <h5 class="acct-detail-title"> Expenses </h5>
+            <p class="acct-detail-val"> $420.54 </p>
+          </span>
+          <span id="credit-score" class="acct-detail">
+            <h5 class="acct-detail-title"> Credit Score </h5>
+            <p class="acct-detail-val"> $673 </p>
+          </span>
+        </section>
+        <section id="accounts-cont">
+          <h2 id="accounts-title"> Accounts</h2>
+          <button class="main-button"> MANAGE ACCOUNTS </button>
+          <ul id="accounts-list">
+            <li class="acct-item acct-saving">
+              <h4 class="acct-title"> Wells Fargo </h4>
+              <h4 class="acct-type"> Savings </h4>
+            </li>
+            <li class="acct-item acct-checking">
+              <h4 class="acct-title"> Wells Fargo </h4>
+              <h4 class="acct-type"> Checking </h4>
+            </li>
+            <li class="acct-item acct-credit">
+              <h4 class="acct-title"> Amazon Credit </h4>
+              <h4 class="acct-type"> Credit Card </h4>
+            </li>
+            <li class="acct-item acct-credit">
+              <h4 class="acct-title"> Southwest Credit </h4>
+              <h4 class="acct-type"> Credit Card </h4>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div id="right-column">
+        <h2> Recent Transactions </h2>
+        <button id="new-transactions-title" class="main-button"> NEW Transactions </button>
+        <table id="transactions">
+          <tr>
+            <th id="trans-date-col">Date</th>
+            <th id="trans-payee-col">Payee</th>
+            <th id="trans-inflow-col">Inflow</th>
+            <th id="trans-outflow-col">Outflow</th>
+          </tr>
+          <tr>
+            <td class="trans-date">Oct 25, 2019</td>
+            <td class="trans-payee">Target</td>
+            <td class="trans-inflow">-</td>
+            <td class="trans-outflow">$82.35</td>
+          </tr>
+          <tr>
+            <td class="trans-date">Oct 24, 2019</td>
+            <td class="trans-payee">Express</td>
+            <td class="trans-inflow">-</td>
+            <td class="trans-outflow">$212.92</td>
+          </tr>
+          <tr>
+            <td class="trans-date">Oct 22, 2019</td>
+            <td class="trans-payee">Paycheck</td>
+            <td class="trans-inflow">$1,319.12</td>
+            <td class="trans-outflow">-</td>
+          </tr>
+          <tr>
+            <td class="trans-date">Oct 21, 2019</td>
+            <td class="trans-payee">Trader Joe's</td>
+            <td class="trans-inflow">-</td>
+            <td class="trans-outflow">$54.92</td>
+          </tr>
+          <tr>
+            <td class="trans-date">Oct 20, 2019</td>
+            <td class="trans-payee">Shell</td>
+            <td class="trans-inflow">-</td>
+            <td class="trans-outflow">$46.23</td>
+          </tr>
+          <tr>
+            <td class="trans-date">Oct 19, 2019</td>
+            <td class="trans-payee">Rent</td>
+            <td class="trans-inflow">$800.00</td>
+            <td class="trans-outflow">-</td>
+          </tr>
+          <tr>
+            <td class="trans-date">Oct 19, 2019</td>
+            <td class="trans-payee">Hapa Sushi</td>
+            <td class="trans-inflow">-</td>
+            <td class="trans-outflow">$13.97</td>
+          </tr>
+          <tr>
+            <td class="trans-date">Oct 18, 2019</td>
+            <td class="trans-payee">Pig Train</td>
+            <td class="trans-inflow">-</td>
+            <td class="trans-outflow">$4.83</td>
+          </tr>
+          <tr>
+            <td class="trans-date">Oct 18, 2019</td>
+            <td class="trans-payee">RTD</td>
+            <td class="trans-inflow">-</td>
+            <td class="trans-outflow">$6.00</td>
+          </tr>
+        </table>
+      </div>
+    </main>
   </body>
 </html>
