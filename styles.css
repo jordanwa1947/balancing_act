@@ -1,25 +1,124 @@
-#elephant-logo {
-
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl,
+dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
 }
+
+@font-face {
+  font-family: 'Biryani', sans-serif;
+}
+
+body {
+  font-family: 'Biryani', sans-serif;
+  color: #363636;
+  background-color: #F5F5F5
+}
+
+#main-account-summary {
+  margin-top: 40px;
+}
+
+#balancing-act-title {
+  position: relative;
+  top: 45px;
+}
+
+/*
+  Left Column CSS
+*/
 
 #left-column {
   float: left;
+  background-color: white;
+}
+
+#elephant-logo {
+  width: 82px;
+  height: 86px;
+  padding: 0px;
+  float: left;
+  margin-right: 20px;
+  margin: 15px 20px 0px 5px;
+}
+
+.nav-image {
+  width: 50px;
+  height: 50px;
+  display: block;
+  padding: 15px;
+}
+
+#nav-links {
+  margin-top: 300px;
+}
+
+/*
+  Center Column CSS
+*/
+
+#center-column {
+  float: left;
+  margin: 30px;
+  width: 600px;
+}
+
+header#welcome-banner {
+  height: 100px;
+}
+
+h3#welcome-title {
+  text-align: center;
+  padding: 25px;
+}
+
+button#welcome-close {
+  display: block;
+  float: right;
+}
+
+section#account-details-cont .acct-detail {
+  float: left;
+  margin: 15px;
+  padding: 10px;
+  width:150px;
+  background-color: white;
+}
+
+section#account-details-cont p.acct-detail-val {
+  font-size: 24px;
+}
+
+section#accounts-cont h2#accounts-title {
+  display: inline;
+}
+
+section#accounts-cont button#accounts-button {
+  float: right;
+}
+
+ul#accounts-list li.acct-item {
+  background-color: white;
+}
+/*
+  Right Column CSS
+*/
+
+#right-column {
+  float: left;
+  width: 500px;
 }
 
 .acct-item h4 {
   display: inline;
 }
 
-.nav-image {
-  width: 82px;
-  height: 86px;
-  display: block;
-}
-
-#center-column {
-  float: left;
-}
-
-#right-column {
-  float: left;
+table#transactions tr {
+  background-color: white;
 }

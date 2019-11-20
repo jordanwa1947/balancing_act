@@ -3,23 +3,26 @@
   <head>
     <title> Balancing Act </title>
     <link href="styles.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Biryani&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Biryani&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav id="left-column">
+    <div id="left-column">
       <img id="elephant-logo" class="nav-image" src="assets/images/elephant.svg" />
-      <img class="nav-image" src="assets/images/dashboard.svg" />
-      <img class="nav-image" src="assets/images/profile.svg" />
-      <img class="nav-image" src="assets/images/transactions.svg" />
-    </nav>
-    <main>
-      <h1> Balancing Act </h1>
+      <nav id="nav-links">
+        <img class="nav-image" src="assets/images/dashboard.svg" />
+        <img class="nav-image" src="assets/images/profile.svg" />
+        <img class="nav-image" src="assets/images/transactions.svg" />
+      </nav>
+    </div>
+    <h1 id="balancing-act-title"> Balancing Act </h1>
+    <main id="main-account-summary">
       <div id="center-column">
         <header id="welcome-banner">
-          <button id="welcome-close"> x <button>
+          <button id="welcome-close"> x </button>
           <h3 id="welcome-title"> Welcome Oscar! </h3>
         </header>
         <section id="account-details-cont">
-          <span id= "acct-income" class="acct-detail">
+          <span id="acct-income" class="acct-detail">
             <h5 class="acct-detail-title"> Income </h5>
             <p class="acct-detail-val"> $2119.12 </p>
           </span>
@@ -34,7 +37,7 @@
         </section>
         <section id="accounts-cont">
           <h2 id="accounts-title"> Accounts</h2>
-          <button class="main-button"> MANAGE ACCOUNTS </button>
+          <button id="accounts-button" class="main-button"> MANAGE ACCOUNTS </button>
           <ul id="accounts-list">
             <li class="acct-item acct-saving">
               <h4 class="acct-title"> Wells Fargo </h4>
