@@ -21,13 +21,19 @@ body {
   background-color: #F5F5F5
 }
 
-#main-account-summary {
-  margin-top: 40px;
-}
-
-#balancing-act-title {
+h1#balancing-act-title {
   position: relative;
   top: 45px;
+}
+
+button.main-button {
+  padding: 7px 15px;
+  background-color: #1CA3BA;
+  color: white;
+  font-size: 14px;
+  border-radius: 25px;
+  border: none;
+  margin-top: 5px;
 }
 
 /*
@@ -37,6 +43,8 @@ body {
 #left-column {
   float: left;
   background-color: white;
+  margin-right: 40px;
+  height: 850px;
 }
 
 #elephant-logo {
@@ -56,7 +64,7 @@ body {
 }
 
 #nav-links {
-  margin-top: 300px;
+  margin-top: 250px;
 }
 
 /*
@@ -65,12 +73,17 @@ body {
 
 #center-column {
   float: left;
-  margin: 30px;
+  margin: 30px 45px 0px 0px;
   width: 600px;
+}
+
+#main-account-summary {
+  margin-top: 40px;
 }
 
 header#welcome-banner {
   height: 100px;
+  background-image: linear-gradient(to right, #8ED1DC, #E3F4F6);
 }
 
 h3#welcome-title {
@@ -81,6 +94,14 @@ h3#welcome-title {
 button#welcome-close {
   display: block;
   float: right;
+  border: none;
+  background: none;
+}
+
+#close-x {
+  height: 10px;
+  width: 10px;
+  padding: 15px;
 }
 
 section#account-details-cont .acct-detail {
@@ -105,7 +126,32 @@ section#accounts-cont button#accounts-button {
 
 ul#accounts-list li.acct-item {
   background-color: white;
+  height: 80px;
+  list-style: none;
+  margin: 20px 0px;
 }
+
+ul#accounts-list h4.acct-title {
+  text-align: center;
+  position: relative;
+  left: 100px;
+  bottom: 20px;
+}
+
+ul#accounts-list h4.acct-type {
+  float: right;
+  position: relative;
+  top: 28px;
+  right: 40px;
+}
+
+img.account-icon {
+  height: 50px;
+  width: 50px;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
 /*
   Right Column CSS
 */
@@ -113,12 +159,36 @@ ul#accounts-list li.acct-item {
 #right-column {
   float: left;
   width: 500px;
+  margin: 30px 45px;
+}
+
+section#table-cont {
+  padding: 30px;
+  background-color: white;
+}
+
+h2#recent-trans-title {
+  display: inline;
+}
+
+button#new-trans-button {
+  float: right;
 }
 
 .acct-item h4 {
   display: inline;
 }
 
+table#transactions {
+  width: 440px;
+}
+
 table#transactions tr {
-  background-color: white;
+  text-align: left;
+  border-bottom: #CCCCCC;
+}
+
+th, td {
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
 }
