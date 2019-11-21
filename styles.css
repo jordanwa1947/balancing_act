@@ -23,17 +23,18 @@ body {
 
 h1#balancing-act-title {
   position: relative;
-  top: 45px;
+  top: 28px;
+  font-size: 24px;
 }
 
 button.main-button {
-  padding: 7px 15px;
+  padding: 6px 17px;
   background-color: #1CA3BA;
   color: white;
-  font-size: 14px;
+  font-size: 12px;
   border-radius: 25px;
   border: none;
-  margin-top: 5px;
+  font-weight: 200;
 }
 
 /*
@@ -43,28 +44,28 @@ button.main-button {
 #left-column {
   float: left;
   background-color: white;
-  margin-right: 40px;
+  margin-right: 30px;
   height: 850px;
 }
 
 #elephant-logo {
-  width: 82px;
-  height: 86px;
+  width: 61px;
+  height: 65px;
   padding: 0px;
   float: left;
   margin-right: 20px;
-  margin: 15px 20px 0px 5px;
+  margin: 10px 7px 0px 5px;
 }
 
 .nav-image {
-  width: 50px;
-  height: 50px;
+  width: 33px;
+  height: 33px;
   display: block;
-  padding: 15px;
+  padding: 8px 15px;
 }
 
 #nav-links {
-  margin-top: 250px;
+  margin-top: 256px;
 }
 
 /*
@@ -73,8 +74,8 @@ button.main-button {
 
 #center-column {
   float: left;
-  margin: 30px 45px 0px 0px;
-  width: 600px;
+  margin: 10px 34px 0px 0px;
+  width: 520px;
 }
 
 #main-account-summary {
@@ -82,13 +83,14 @@ button.main-button {
 }
 
 header#welcome-banner {
-  height: 100px;
+  height: 80px;
+  width: 520px;
   background-image: linear-gradient(to right, #8ED1DC, #E3F4F6);
 }
 
 h3#welcome-title {
-  text-align: center;
-  padding: 25px;
+  text-align: left;
+  padding: 24px;
 }
 
 button#welcome-close {
@@ -104,38 +106,58 @@ button#welcome-close {
   padding: 15px;
 }
 
+section#account-details-cont {
+  margin-top: 10px;
+}
+
 section#account-details-cont .acct-detail {
-  float: left;
-  margin: 15px;
-  padding: 10px;
-  width:150px;
-  background-color: white;
+    float: left;
+    margin: 12px 12px 32px 12px;
+    padding: 15px 0px 10px 15px;
+    width: 142px;
+    height: 58px;
+    background-color: white;
+}
+
+section#account-details-cont #acct-income {
+  margin-left: 0px;
+}
+
+section#account-details-cont #credit-score {
+  margin-right: 0px;
+}
+
+section#account-details-cont h5.acct-detail-title {
+  font-size: 8px;
 }
 
 section#account-details-cont p.acct-detail-val {
-  font-size: 24px;
+  font-size: 20px;
 }
 
-section#accounts-cont h2#accounts-title {
+h2#accounts-title {
   display: inline;
+  font-size: 20px;
 }
 
-section#accounts-cont button#accounts-button {
+button#accounts-button {
   float: right;
 }
 
 ul#accounts-list li.acct-item {
   background-color: white;
-  height: 80px;
+  height: 60px;
+  width: 520px;
   list-style: none;
-  margin: 20px 0px;
+  margin: 10px 0px;
 }
 
 ul#accounts-list h4.acct-title {
-  text-align: center;
-  position: relative;
-  left: 100px;
-  bottom: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 7px;
+    display: inline-block;
+    margin-left: 68px;
 }
 
 ul#accounts-list h4.acct-type {
@@ -146,8 +168,8 @@ ul#accounts-list h4.acct-type {
 }
 
 img.account-icon {
-  height: 50px;
-  width: 50px;
+  height: 28px;
+  width: 28px;
   padding-top: 15px;
   padding-left: 15px;
 }
@@ -158,8 +180,8 @@ img.account-icon {
 
 #right-column {
   float: left;
-  width: 500px;
-  margin: 30px 45px;
+  width: 496px;
+  margin: 30px 34px;
 }
 
 section#table-cont {
@@ -167,8 +189,13 @@ section#table-cont {
   background-color: white;
 }
 
+section#table-head {
+  margin-bottom: 10px;
+}
+
 h2#recent-trans-title {
   display: inline;
+  font-size: 20px;
 }
 
 button#new-trans-button {
@@ -181,14 +208,20 @@ button#new-trans-button {
 
 table#transactions {
   width: 440px;
-}
-
-table#transactions tr {
-  text-align: left;
-  border-bottom: #CCCCCC;
-}
-
-th, td {
-  border-bottom: 1px solid black;
+  border-spacing: 0px;
   border-collapse: collapse;
+}
+
+table#transactions tr, th {
+  text-align: left;
+  border-bottom: 1px solid #CCCCCC;
+  font-size: 14px;
+}
+
+td.trans-date {
+
+}
+
+table#transactions tr td.trans-payee {
+  font-weight: 700;
 }
