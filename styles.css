@@ -1,25 +1,279 @@
-#elephant-logo {
-
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl,
+dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
 }
+
+@font-face {
+  font-family: 'Biryani', sans-serif;
+}
+
+body {
+  font-family: 'Biryani', sans-serif;
+  color: #363636;
+  background-color: #F5F5F5
+}
+
+h1#balancing-act-title {
+  position: relative;
+  top: 28px;
+  font-size: 24px;
+}
+
+button.main-button {
+  font-family: 'Biryani', sans-serif;
+  padding: 4px 19px;
+  background-color: #1CA3BA;
+  color: white;
+  font-size: 9px;
+  border-radius: 25px;
+  border: solid 1px;
+  border-top-color: rgb(117, 184, 199);
+  border-bottom-color: rgb(85, 162, 182);
+  border-left-color: rgb(115, 181, 196);
+  border-right-color: rgb(135, 190, 205);
+  height: 28px;
+}
+
+button.main-button:hover {
+  color: rgb(76, 161, 183);
+  background-color: white;
+  border: inset 1px #8ED1DC;
+  cursor: pointer;
+}
+
+button.main-button:focus {
+  outline:0;
+}
+
+/*
+  Left Column CSS
+*/
 
 #left-column {
   float: left;
+  background-color: white;
+  margin-right: 30px;
+  height: 650px;
+}
+
+#elephant-logo {
+  width: 61px;
+  height: 65px;
+  padding: 0px;
+  float: left;
+  margin-right: 20px;
+  margin: 10px 7px 0px 5px;
+}
+
+.nav-image {
+  width: 33px;
+  height: 33px;
+  display: block;
+  padding: 8px 15px;
+}
+
+nav#nav-links a img:hover {
+  border-left: solid 3px #1CA3BA;
+}
+
+#nav-links {
+  margin-top: 256px;
+}
+
+/*
+  Center Column CSS
+*/
+
+#center-column {
+  float: left;
+  margin: 10px 34px 0px 0px;
+  width: 520px;
+}
+
+#main-account-summary {
+  margin-top: 40px;
+}
+
+header#welcome-banner {
+  height: 80px;
+  width: 520px;
+  background-image: linear-gradient(to right, #8ED1DC, #E3F4F6);
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+  border-radius: 4px;
+}
+
+h3#welcome-title {
+  text-align: left;
+  padding: 24px;
+}
+
+button#welcome-close {
+  display: block;
+  float: right;
+  border: none;
+  background: none;
+}
+
+#close-x {
+  height: 10px;
+  width: 10px;
+  padding: 15px;
+}
+
+section#account-details-cont {
+  margin-top: 10px;
+}
+
+section#account-details-cont .acct-detail {
+  float: left;
+  margin: 12px 12px 32px 12px;
+  padding: 15px 0px 10px 15px;
+  width: 142px;
+  height: 58px;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+  border-radius: 4px;
+}
+
+section#account-details-cont #acct-income {
+  margin-left: 0px;
+}
+
+section#account-details-cont #credit-score {
+  margin-right: 0px;
+}
+
+section#account-details-cont h5.acct-detail-title {
+  font-size: 8px;
+}
+
+section#account-details-cont p.acct-detail-val {
+  font-size: 20px;
+}
+
+h2#accounts-title {
+  display: inline;
+  font-size: 20px;
+}
+
+button#accounts-button {
+  float: right;
+}
+
+ul#accounts-list li.acct-item {
+  background-color: white;
+  height: 60px;
+  width: 520px;
+  list-style: none;
+  margin: 10px 0px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+  border-radius: 4px;
+}
+
+ul#accounts-list li.acct-checking {
+  margin-top: 6px;
+}
+
+ul#accounts-list h4.acct-title {
+    text-align: center;
+    position: relative;
+    bottom: 7px;
+    display: inline-block;
+    margin-left: 68px;
+}
+
+ul#accounts-list h4.acct-type {
+  float: left;
+  width: 140px;
+  margin-top: 20px;
+}
+
+img.account-icon {
+  height: 28px;
+  width: 28px;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+span.float-right {
+  float: right;
+}
+
+/*
+  Right Column CSS
+*/
+
+#right-column {
+  float: left;
+  width: 496px;
+  margin: 10px 34px 30px 34px;
+}
+
+section#table-cont {
+  padding: 25px;
+  padding-top: 30px;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+  border-radius: 4px;
+  height: 100%;
+}
+
+h2#recent-trans-title {
+  display: inline;
+  font-size: 20px;
+  position: relative;
+  bottom: 5px;
+}
+
+button#new-trans-button {
+  float: right;
 }
 
 .acct-item h4 {
   display: inline;
 }
 
-.nav-image {
-  width: 82px;
-  height: 86px;
-  display: block;
+table#transactions {
+  width: 445px;
+  border-spacing: 0px;
+  border-collapse: collapse;
 }
 
-#center-column {
-  float: left;
+table#transactions tr, th {
+  text-align: left;
+  border-bottom: 1px solid #CCCCCC;
+  font-size: 14px;
+  height: 38px;
 }
 
-#right-column {
-  float: left;
+table#transactions th {
+  border-bottom: 1px solid rgb(246, 246, 246);
+}
+
+td.trans-date {
+
+}
+
+table#transactions tr td.trans-payee {
+
+}
+
+table#transactions tr td.trans-date {
+  width: 110px;
+}
+
+table#transactions tr td.trans-outflow {
+  width: 70px;
+}
+
+table#transactions tr td.trans-inflow {
+  width: 110px;
 }
