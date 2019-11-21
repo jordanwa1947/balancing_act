@@ -29,13 +29,28 @@ h1#balancing-act-title {
 
 button.main-button {
   font-family: 'Biryani', sans-serif;
-  padding: 6px 17px;
+  padding: 4px 19px;
   background-color: #1CA3BA;
   color: white;
   font-size: 9px;
   border-radius: 25px;
-  border: none;
-  height: 30px;
+  border: solid 1px;
+  border-top-color: rgb(117, 184, 199);
+  border-bottom-color: rgb(85, 162, 182);
+  border-left-color: rgb(115, 181, 196);
+  border-right-color: rgb(135, 190, 205);
+  height: 28px;
+}
+
+button.main-button:hover {
+  color: rgb(76, 161, 183);
+  background-color: white;
+  border: inset 1px #8ED1DC;
+  cursor: pointer;
+}
+
+button.main-button:focus {
+  outline:0;
 }
 
 /*
@@ -204,18 +219,18 @@ span.float-right {
 
 section#table-cont {
   padding: 25px;
+  padding-top: 30px;
   background-color: white;
   box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
   border-radius: 4px;
-}
-
-section#table-head {
-  margin-bottom: 10px;
+  height: 100%;
 }
 
 h2#recent-trans-title {
   display: inline;
   font-size: 20px;
+  position: relative;
+  bottom: 5px;
 }
 
 button#new-trans-button {
