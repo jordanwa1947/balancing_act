@@ -80,11 +80,11 @@ button.main-button:focus {
   padding: 8px 15px;
 }
 
-nav#nav-links a img:hover {
+nav.nav-links img:hover {
   border-left: solid 3px #1CA3BA;
 }
 
-#nav-links {
+.nav-links {
   margin-top: 256px;
 }
 
@@ -260,14 +260,6 @@ table#transactions tr, th {
 
 table#transactions th {
   border-bottom: 1px solid rgb(246, 246, 246);
-}
-
-td.trans-date {
-
-}
-
-table#transactions tr td.trans-payee {
-
 }
 
 table#transactions tr td.trans-date {
