@@ -7,11 +7,11 @@
   </head>
   <body>
     <div id="left-column">
-      <img id="elephant-logo" class="nav-image" src="assets/images/elephant.svg" />
+      <img id="elephant-logo" class="nav-image" src="assets/images/elephant.svg">
       <nav id="nav-links">
-        <img class="nav-image" src="assets/images/dashboard.svg" />
-        <img class="nav-image" src="assets/images/transactions.svg" />
-        <img class="nav-image" src="assets/images/profile.svg" />
+        <a href=""> <img class="nav-image" src="assets/images/dashboard.svg"> </a>
+        <a href=""> <img class="nav-image" src="assets/images/transactions.svg"> </a>
+        <a href=""> <img class="nav-image" src="assets/images/profile.svg"> </a>
       </nav>
     </div>
     <h1 id="balancing-act-title"> Balancing Act </h1>
@@ -19,7 +19,7 @@
       <div id="center-column">
         <header id="welcome-banner">
           <button id="welcome-close"> <img id="close-x" src="assets/images/close.svg" /> </button>
-          <h3 id="welcome-title"> Welcome Oscar! </h3>
+          <h3 id="welcome-title"> Welcome, Oscar! </h3>
         </header>
         <section id="account-details-cont">
           <span id="acct-income" class="acct-detail">
@@ -41,22 +41,30 @@
           <li class="acct-item acct-checking">
             <img class="checking-icon account-icon" src="assets/images/checking.svg" />
             <h4 class="acct-title"> Wells Fargo </h4>
-            <h4 class="acct-type"> Checking </h4>
+            <span class="float-right">
+              <h4 class="acct-type"> Checking </h4>
+            </span>
           </li>
           <li class="acct-item acct-saving">
             <img class="saving-icon account-icon" src="assets/images/savings.svg" />
             <h4 class="acct-title"> Wells Fargo </h4>
-            <h4 class="acct-type"> Savings </h4>
+            <span class="float-right">
+              <h4 class="acct-type"> Savings </h4>
+            </span>
           </li>
           <li class="acct-item acct-credit">
             <img class="credit-icon account-icon" src="assets/images/credit-card.svg" />
             <h4 class="acct-title"> Amazon Credit </h4>
-            <h4 class="acct-type"> Credit Card </h4>
+            <span class="float-right">
+              <h4 class="acct-type"> Credit Card </h4>
+            </span>
           </li>
           <li class="acct-item acct-credit">
             <img class="credit-icon account-icon" src="assets/images/credit-card.svg" />
             <h4 class="acct-title"> Southwest Credit </h4>
-            <h4 class="acct-type"> Credit Card </h4>
+            <span class="float-right">
+              <h4 class="acct-type"> Credit Card </h4>
+            </span>
           </li>
         </ul>
       </div>
@@ -80,10 +88,12 @@
               <td class="trans-outflow">$82.35</td>
             </tr>
             <tr>
-              <td class="trans-date">Oct 24, 2019</td>
-              <td class="trans-payee">Express</td>
+              <td class="trans-date">Oc
+                <span class="float-left">t 24, 2019</td>
+                <td class="trans-payee">Express</td>
+              </span>
               <td class="trans-inflow">-</td>
-              <td class="trans-outflow">$212.92</td>
+              <td class="trans-outflow">$212.24</td>
             </tr>
             <tr>
               <td class="trans-date">Oct 22, 2019</td>

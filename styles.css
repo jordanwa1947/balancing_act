@@ -28,13 +28,14 @@ h1#balancing-act-title {
 }
 
 button.main-button {
+  font-family: 'Biryani', sans-serif;
   padding: 6px 17px;
   background-color: #1CA3BA;
   color: white;
-  font-size: 12px;
+  font-size: 9px;
   border-radius: 25px;
   border: none;
-  font-weight: 200;
+  height: 30px;
 }
 
 /*
@@ -45,7 +46,7 @@ button.main-button {
   float: left;
   background-color: white;
   margin-right: 30px;
-  height: 850px;
+  height: 650px;
 }
 
 #elephant-logo {
@@ -62,6 +63,10 @@ button.main-button {
   height: 33px;
   display: block;
   padding: 8px 15px;
+}
+
+nav#nav-links a img:hover {
+  border-left: solid 3px #1CA3BA;
 }
 
 #nav-links {
@@ -86,6 +91,8 @@ header#welcome-banner {
   height: 80px;
   width: 520px;
   background-image: linear-gradient(to right, #8ED1DC, #E3F4F6);
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+  border-radius: 4px;
 }
 
 h3#welcome-title {
@@ -111,12 +118,14 @@ section#account-details-cont {
 }
 
 section#account-details-cont .acct-detail {
-    float: left;
-    margin: 12px 12px 32px 12px;
-    padding: 15px 0px 10px 15px;
-    width: 142px;
-    height: 58px;
-    background-color: white;
+  float: left;
+  margin: 12px 12px 32px 12px;
+  padding: 15px 0px 10px 15px;
+  width: 142px;
+  height: 58px;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+  border-radius: 4px;
 }
 
 section#account-details-cont #acct-income {
@@ -150,6 +159,12 @@ ul#accounts-list li.acct-item {
   width: 520px;
   list-style: none;
   margin: 10px 0px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+  border-radius: 4px;
+}
+
+ul#accounts-list li.acct-checking {
+  margin-top: 6px;
 }
 
 ul#accounts-list h4.acct-title {
@@ -161,10 +176,9 @@ ul#accounts-list h4.acct-title {
 }
 
 ul#accounts-list h4.acct-type {
-  float: right;
-  position: relative;
-  top: 28px;
-  right: 40px;
+  float: left;
+  width: 140px;
+  margin-top: 20px;
 }
 
 img.account-icon {
@@ -174,6 +188,10 @@ img.account-icon {
   padding-left: 15px;
 }
 
+span.float-right {
+  float: right;
+}
+
 /*
   Right Column CSS
 */
@@ -181,12 +199,14 @@ img.account-icon {
 #right-column {
   float: left;
   width: 496px;
-  margin: 30px 34px;
+  margin: 10px 34px 30px 34px;
 }
 
 section#table-cont {
-  padding: 30px;
+  padding: 25px;
   background-color: white;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+  border-radius: 4px;
 }
 
 section#table-head {
@@ -207,7 +227,7 @@ button#new-trans-button {
 }
 
 table#transactions {
-  width: 440px;
+  width: 445px;
   border-spacing: 0px;
   border-collapse: collapse;
 }
@@ -216,6 +236,11 @@ table#transactions tr, th {
   text-align: left;
   border-bottom: 1px solid #CCCCCC;
   font-size: 14px;
+  height: 38px;
+}
+
+table#transactions th {
+  border-bottom: 1px solid rgb(246, 246, 246);
 }
 
 td.trans-date {
@@ -223,5 +248,17 @@ td.trans-date {
 }
 
 table#transactions tr td.trans-payee {
-  font-weight: 700;
+
+}
+
+table#transactions tr td.trans-date {
+  width: 110px;
+}
+
+table#transactions tr td.trans-outflow {
+  width: 70px;
+}
+
+table#transactions tr td.trans-inflow {
+  width: 110px;
 }
