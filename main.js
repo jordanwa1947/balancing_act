@@ -1,11 +1,12 @@
-var welcomeBanner = document.getElementById('welcome-banner');
-var closeWelcomeX = document.getElementById('close-welcome-x');
-var accountDetails = document.getElementById('account-details-cont');
-var centerColumn = document.getElementById('center-column');
-closeWelcomeX.addEventListener('click', closeWelcome);
+import { dashboard } from './scripts/dashboard.js';
 
-function closeWelcome () {
-  welcomeBanner.style.display = 'none';
-  accountDetails.style.margin = '0px';
-  centerColumn.style.margin = '0px 34px 0px 0px';
+var dashboardIcon = document.getElementById('dashboard-icon');
+var transIcon = document.getElementById('trans-icon');
+transIcon.addEventListener('click', toggleTransactions);
+
+dashboard.closeWelcomeOnClick();
+
+function toggleTransactions () {
+  transIcon.classList.add('on-page');
+  dashboardIcon.classList.remove('on-page');
 }
