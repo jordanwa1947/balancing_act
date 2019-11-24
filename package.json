@@ -1,0 +1,19 @@
+{
+  "name": "balancing_act",
+  "version": "1.0.0",
+  "description": "simple budgeting app",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordanwa1947/balancing_act.git"
+  },
+  "author": "Jordan Whitten",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordanwa1947/balancing_act/issues"
+  },
+  "homepage": "https://github.com/jordanwa1947/balancing_act#readme"
+}
