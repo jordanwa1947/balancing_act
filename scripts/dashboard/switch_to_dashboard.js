@@ -1,20 +1,9 @@
-export { dashboard }
+export { switchToDashboard }
 // modules only execute once
-var dashboard = (function() {
-  var welcomeBanner = document.getElementById('welcome-banner');
-  var closeWelcomeX = document.getElementById('close-welcome-x');
-  var accountDetails = document.getElementById('account-details-cont');
-  var centerColumn = document.getElementById('center-column');
-
-  var makeWelcomeDisappear = function () {
-    welcomeBanner.style.display = 'none';
-    accountDetails.style.margin = '0px';
-    centerColumn.style.margin = '0px 34px 0px 0px';
-  }
-
-  function closeWelcomeOnClick () {
-    closeWelcomeX.addEventListener('click', makeWelcomeDisappear);
-  }
+var switchToDashboard = (function() {
+  var dashboardIcon = document.getElementById('dashboard-icon');
+  var transIcon = document.getElementById('trans-icon');
+  var mainElement = document.getElementById('main-page-content');
 
   var dashboardHTML = `<h1 id="balancing-act-title"> Balancing Act </h1>
   <div id="center-column">
@@ -140,10 +129,6 @@ var dashboard = (function() {
     </section>
   </div>`
 
-  var dashboardIcon = document.getElementById('dashboard-icon');
-  var transIcon = document.getElementById('trans-icon');
-  var mainElement = document.getElementById('main-page-content');
-
   var toggleOnPageClass = function () {
     dashboardIcon.classList.add('on-page');
     transIcon.classList.remove('on-page');
@@ -155,8 +140,6 @@ var dashboard = (function() {
   }
 
   return {
-    closeWelcomeOnClick: closeWelcomeOnClick,
     switchToDashboardOnClick: switchToDashboardOnClick
   };
-
 })();

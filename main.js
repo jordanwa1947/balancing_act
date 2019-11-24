@@ -1,7 +1,8 @@
-import { dashboard } from './scripts/dashboard.js';
-import { transactions } from './scripts/transactions.js';
+import { closeWelcome } from './scripts/dashboard/close_welcome.js';
+import { switchToDashboard } from './scripts/dashboard/switch_to_dashboard.js';
+import { switchToTransactions } from './scripts/transactions/switch_to_transactions.js';
 
-dashboard.closeWelcomeOnClick();
-dashboard.switchToDashboardOnClick();
+closeWelcome.closeWelcomeOnClick();
+switchToDashboard.switchToDashboardOnClick();
 
-transactions.switchToTransactionsOnClick();
+switchToTransactions.switchToTransactionsOnClick();

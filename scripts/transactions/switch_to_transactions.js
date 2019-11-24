@@ -1,6 +1,6 @@
-export { transactions }
+export { switchToTransactions }
 
-var transactions = (function () {
+var switchToTransactions = (function () {
   var dashboardIcon = document.getElementById('dashboard-icon');
   var transIcon = document.getElementById('trans-icon');
   var mainElement = document.getElementById('main-page-content');
