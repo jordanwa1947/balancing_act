@@ -1,12 +1,7 @@
 import { dashboard } from './scripts/dashboard.js';
-
-var dashboardIcon = document.getElementById('dashboard-icon');
-var transIcon = document.getElementById('trans-icon');
-transIcon.addEventListener('click', toggleTransactions);
+import { transactions } from './scripts/transactions.js';
 
 dashboard.closeWelcomeOnClick();
+dashboard.switchToDashboardOnClick();
 
-function toggleTransactions () {
-  transIcon.classList.add('on-page');
-  dashboardIcon.classList.remove('on-page');
-}
+transactions.switchToTransactionsOnClick();
