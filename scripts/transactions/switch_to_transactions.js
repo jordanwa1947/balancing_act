@@ -6,10 +6,15 @@ var switchToTransactions = (function () {
   var mainElement = document.getElementById('main-page-content');
 
   var transactionsHtml = `
-  <h1 class="page-title"> Transactions </h1>
+  <header>
+    <h1 class="page-title"> Transactions </h1>
+    <button class="main-button"> ALL </button>
+    <button class="main-button"> INFLOW </button>
+    <button class="main-button"> OUTFLOW </button>
+  </header>
   <div class="center-column">
     <section class="trans-table-cont">
-      <table id="transactions-table">
+      <table class="expanded-transactions-table">
         <tr>
           <th>Date</th>
           <th>Account</th>
@@ -18,98 +23,98 @@ var switchToTransactions = (function () {
           <th>Outflow</th>
         </tr>
         <tr>
-          <td class="trans-date">Oct 25, 2019</td>
+          <td class="trans-date">10-25-19</td>
           <td class="trans-acct">Credit Card</td>
           <td class="trans-payee">Target</td>
           <td class="trans-inflow">-</td>
           <td class="trans-outflow">$82.35</td>
         </tr>
         <tr>
-          <td class="trans-date">Oct 24, 2019</td>
+          <td class="trans-date">10-24-19</td>
           <td class="trans-acct">Credit Card</td>
           <td class="trans-payee">Express</td>
           <td class="trans-inflow">-</td>
           <td class="trans-outflow">$212.24</td>
         </tr>
         <tr>
-          <td class="trans-date">Oct 22, 2019</td>
+          <td class="trans-date">10-22-19</td>
           <td class="trans-acct">Checking</td>
           <td class="trans-payee">Paycheck</td>
           <td class="trans-inflow">$1,319.12</td>
           <td class="trans-outflow">-</td>
         </tr>
         <tr>
-          <td class="trans-date">Oct 21, 2019</td>
+          <td class="trans-date">10-21-19</td>
           <td class="trans-acct">Credit Card</td>
           <td class="trans-payee">Trader Joe's</td>
           <td class="trans-inflow">-</td>
           <td class="trans-outflow">$54.92</td>
         </tr>
         <tr>
-          <td class="trans-date">Oct 20, 2019</td>
+          <td class="trans-date">10-20-19</td>
           <td class="trans-acct">Credit Card</td>
           <td class="trans-payee">Shell</td>
           <td class="trans-inflow">-</td>
           <td class="trans-outflow">$46.23</td>
         </tr>
         <tr>
-          <td class="trans-date">Oct 19, 2019</td>
+          <td class="trans-date">10-19-19</td>
           <td class="trans-acct">Savings</td>
           <td class="trans-payee">Rent</td>
           <td class="trans-inflow">$800.00</td>
           <td class="trans-outflow">-</td>
         </tr>
         <tr>
-          <td class="trans-date">Oct 19, 2019</td>
+          <td class="trans-date">10-19-19</td>
           <td class="trans-acct">Checking</td>
           <td class="trans-payee">Hapa Sushi</td>
           <td class="trans-inflow">-</td>
           <td class="trans-outflow">$13.97</td>
         </tr>
         <tr>
-          <td class="trans-date">Oct 18, 2019</td>
+          <td class="trans-date">10-18-19</td>
           <td class="trans-acct">Credit Card</td>
           <td class="trans-payee">Pig Train</td>
           <td class="trans-inflow">-</td>
           <td class="trans-outflow">$4.83</td>
         </tr>
         <tr>
-          <td class="trans-date">Oct 18, 2019</td>
+          <td class="trans-date">10-18-19</td>
           <td class="trans-acct">Checking</td>
           <td class="trans-payee">RTD</td>
           <td class="trans-inflow">-</td>
           <td class="trans-outflow">$6.00</td>
         </tr>
         <tr>
-          <td class="trans-date">Oct 24, 2019</td>
+          <td class="trans-date">10-24-19</td>
           <td class="trans-acct">Checking</td>
           <td class="trans-payee">Express</td>
           <td class="trans-inflow">-</td>
           <td class="trans-outflow">$212.24</td>
         </tr>
         <tr>
-          <td class="trans-date">Oct 24, 2019</td>
+          <td class="trans-date">10-24-19</td>
           <td class="trans-acct">Checking</td>
           <td class="trans-payee">Express</td>
           <td class="trans-inflow">-</td>
           <td class="trans-outflow">$212.24</td>
         </tr>
         <tr>
-          <td class="trans-date">Oct 24, 2019</td>
+          <td class="trans-date">10-24-19</td>
           <td class="trans-acct">Checking</td>
           <td class="trans-payee">Express</td>
           <td class="trans-inflow">-</td>
           <td class="trans-outflow">$212.24</td>
         </tr>
         <tr>
-          <td class="trans-date">Oct 24, 2019</td>
+          <td class="trans-date">10-24-19</td>
           <td class="trans-acct">Checking</td>
           <td class="trans-payee">Express</td>
           <td class="trans-inflow">-</td>
           <td class="trans-outflow">$212.24</td>
         </tr>
         <tr>
-          <td class="trans-date">Oct 24, 2019</td>
+          <td class="trans-date">10-24-19</td>
           <td class="trans-acct">Checking</td>
           <td class="trans-payee">Express</td>
           <td class="trans-inflow">-</td>
