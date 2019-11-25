@@ -269,7 +269,7 @@ center column
 
 #main-transactions {
   width: 535px;
-  margin-top: 10px;
+  margin-top: 11px;
 }
 
 #transactions-title {
@@ -351,6 +351,7 @@ table.expanded-transactions-table tr td.trans-outflow {
   box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
   border-radius: 4px;
   overflow: auto;
+  margin-left: 40px;
 }
 
 #new-trans-form select, input {
