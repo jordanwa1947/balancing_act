@@ -21,7 +21,7 @@ body {
   background-color: #F5F5F5
 }
 
-h1#balancing-act-title {
+h1.page-title {
   position: relative;
   top: 28px;
   font-size: 24px;
@@ -94,7 +94,7 @@ button.main-button:focus {
   Center Column CSS
 */
 
-#center-column {
+.center-column {
   float: left;
   margin: 10px 34px 0px 0px;
   width: 520px;
@@ -213,7 +213,7 @@ span.float-right {
   margin: 10px 34px 30px 34px;
 }
 
-section#trans-table-cont {
+section.trans-table-cont {
   padding: 25px;
   padding-top: 30px;
   background-color: white;
