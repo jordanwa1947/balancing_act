@@ -1,4 +1,5 @@
 export { switchToDashboard }
+import { closeWelcome } from './close_welcome.js'
 // modules only execute once
 var switchToDashboard = (function() {
   var dashboardIcon = document.getElementById('dashboard-icon');
@@ -65,7 +66,7 @@ var switchToDashboard = (function() {
         <h2 id="recent-trans-title"> Recent Transactions </h2>
         <button id="new-trans-button" class="main-button"> NEW TRANSACTION </button>
       </section>
-      <table id="transactions-table">
+      <table class="transactions-table">
         <tr>
           <th>Date</th>
           <th>Payee</th>
@@ -134,6 +135,8 @@ var switchToDashboard = (function() {
     dashboardIcon.classList.add('on-page');
     transIcon.classList.remove('on-page');
     mainElement.innerHTML = dashboardHTML;
+    var closeWelcomeX = document.getElementById('close-welcome-x');
+    closeWelcomeX.addEventListener('click', closeWelcome.makeWelcomeDisappear);
   }
 
   function switchToDashboardOnClick () {

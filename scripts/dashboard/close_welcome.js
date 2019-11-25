@@ -3,9 +3,9 @@ export { closeWelcome }
 var closeWelcome = (function() {
   var closeWelcomeX = document.getElementById('close-welcome-x');
 
+  // creates a style element, appends it to the head element
+  // and inserts rules to the stylesheet so the styles persist
   var makeWelcomeDisappear = function () {
-    // creates a style element, appends it to the head element 
-    // and inserts rules to the stylesheet so the styles persist
     var style = document.createElement('style');
     document.head.appendChild(style);
     style.sheet.insertRule( `#welcome-banner { display: none; }`);
@@ -18,6 +18,7 @@ var closeWelcome = (function() {
   }
 
   return {
-    closeWelcomeOnClick: closeWelcomeOnClick
+    closeWelcomeOnClick: closeWelcomeOnClick,
+    makeWelcomeDisappear: makeWelcomeDisappear
   };
 })();
