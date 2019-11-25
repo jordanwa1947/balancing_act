@@ -237,31 +237,53 @@ button#new-trans-button {
   display: inline;
 }
 
-table#transactions-table {
+table.transactions-table {
   width: 445px;
   border-spacing: 0px;
   border-collapse: collapse;
 }
 
-table#transactions-table tr, th {
+
+ td, th {
   text-align: left;
   border-bottom: 1px solid #CCCCCC;
   font-size: 14px;
   height: 38px;
 }
 
-table#transactions-table th {
-  border-bottom: 1px solid rgb(246, 246, 246);
-}
-
-table#transactions-table tr td.trans-date {
+tr td.trans-date {
   width: 110px;
 }
 
-table#transactions-table tr td.trans-outflow {
+table.transactions-table tr td.trans-outflow {
   width: 70px;
 }
 
-table#transactions-table tr td.trans-inflow {
+table.transactions-table tr td.trans-inflow {
   width: 110px;
+}
+
+/*
+Transactions
+*/
+
+table.expanded-transactions-table {
+  width: 100%;
+  border-spacing: 0px;
+}
+
+table.expanded-transactions-table td {
+  font-size: 12px;
+}
+
+table.expanded-transactions-table tr td.trans-acct {
+  width: 110px;
+}
+
+table.expanded-transactions-table tr td.trans-payee {
+  width: 140px;
+}
+
+table.expanded-transactions-table tr td.trans-inflow {
+  width: 70px;
 }
