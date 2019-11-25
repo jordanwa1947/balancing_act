@@ -28,7 +28,7 @@ h1.page-title {
   margin-bottom: 40px;
 }
 
-button.main-button {
+.main-button {
   font-family: 'Biryani', sans-serif;
   padding: 4px 19px;
   background-color: #1CA3BA;
@@ -43,14 +43,14 @@ button.main-button {
   height: 28px;
 }
 
-button.main-button:hover {
+.main-button:hover {
   color: rgb(76, 161, 183);
   background-color: white;
   border: inset 1px #8ED1DC;
   cursor: pointer;
 }
 
-button.main-button:focus {
+.main-button:focus {
   outline:0;
 }
 
@@ -222,11 +222,10 @@ section.trans-table-cont {
   height: 100%;
 }
 
-h2#recent-trans-title {
-  display: inline;
+h2.section-title {
+  display: inline-block;
   font-size: 20px;
-  position: relative;
-  bottom: 5px;
+  margin-bottom: 5px;
 }
 
 button#new-trans-button {
@@ -265,10 +264,12 @@ table.transactions-table tr td.trans-inflow {
 
 /*
 Transactions
+center column
 */
 
 #main-transactions {
   width: 535px;
+  margin-top: 10px;
 }
 
 #transactions-title {
@@ -285,15 +286,20 @@ Transactions
   width: 400px;
   position: relative;
   left: 260px;
-  bottom: 55px;
+  bottom: 60px;
 }
 
-#transaction-options button {
+.trans-button {
   width: 90px;
   color: #1CA3BA;
   background-color: white;
   border: solid 1px #1CA3BA;
   cursor: pointer;
+}
+
+#exp-trans-cont {
+  height: 480px;
+  overflow: scroll;
 }
 
 #transaction-options button.sel-trans-type {
@@ -331,4 +337,53 @@ table.expanded-transactions-table tr td.trans-inflow {
 
 table.expanded-transactions-table tr td.trans-outflow {
   width: 80px;
+}
+
+/*
+  Add transaction
+  right column
+*/
+
+.new-trans-cont {
+  background-color: white;
+  text-align: center;
+  padding: 20px 60px 30px 60px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+  border-radius: 4px;
+  overflow: auto;
+}
+
+#new-trans-form select, input {
+  display: block;
+  margin: 12px auto;
+  box-shadow: -2px -1px 4px rgba(0,0,0,0.1), 2px 3px 4px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  width: 100%;
+  height: 25px;
+  border-width: 0px;
+}
+
+form#new-trans-form select {
+  background-color: #F5F5F5;
+  font-family: 'Biryani', sans-serif;
+}
+
+form#new-trans-form label {
+  font-size: 14px;
+  float: left;
+}
+
+form#new-trans-form input {
+  font-size: 14px;
+}
+
+form#new-trans-form input#new-trans-button {
+  width: 120px;
+  font-size: 12px;
+  color: white;
+  background-color: #1CA3BA;
+  border: solid 1px #1CA3BA;
+  cursor: pointer;
+  float: left;
+  margin-top: 5px;
 }
