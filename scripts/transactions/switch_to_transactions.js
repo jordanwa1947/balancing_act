@@ -9,13 +9,13 @@ var switchToTransactions = (function () {
   <header id="transactions-title">
     <h1 id="transactions-title" class="page-title"> Transactions </h1>
     <section id="transaction-options">
-      <button class="main-button sel-trans-type"> ALL </button>
-      <button class="main-button"> INFLOW </button>
-      <button class="main-button"> OUTFLOW </button>
+      <button class="main-button trans-button sel-trans-type"> ALL </button>
+      <button class="main-button trans-button"> INFLOW </button>
+      <button class="main-button trans-button"> OUTFLOW </button>
     </section>
   </header>
   <div id="main-transactions" class="center-column">
-    <section class="trans-table-cont">
+    <section id="exp-trans-cont" class="trans-table-cont">
       <table class="expanded-transactions-table">
         <tr>
           <th>Date</th>
@@ -123,8 +123,34 @@ var switchToTransactions = (function () {
           <td class="trans-outflow">$212.24</td>
         </tr>
       </table>
-    <section>
-  <div>`
+    </section>
+  </div>
+  <div id="right-column">
+    <section class="new-trans-cont">
+      <h2 class="section-title"> New Transaction </h2>
+      <form id="new-trans-form">
+        <label> Type of Transaction: </label>
+        <select class="new-trans-select">
+          <option> Expense </option>
+        </select>
+        <label> Category: </label>
+        <select class="new-trans-select">
+          <option> - Select One - </option>
+        </select>
+        <label> Account from: </label>
+        <select class="new-trans-select">
+          <option> - Select One - </option>
+        </select>
+        <label> Payee: </label>
+        <input class="new-trans-field" type="text" />
+        <label> Outflow: </label>
+        <input class="new-trans-field" type="text" />
+        <label> Inflow: </label>
+        <input class="new-trans-field" type="text" />
+        <input id="new-trans-button" class="main-button" type="submit" value="Log Expense"/>
+      </form>
+    </section>
+  </div>`
 
   var toggleToTransactions = function () {
     transIcon.classList.add('on-page');
