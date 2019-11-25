@@ -1,23 +1,14 @@
-export { dashboard }
+export { switchToDashboard }
+import { closeWelcome } from './close_welcome.js'
 // modules only execute once
-var dashboard = (function() {
-  var welcomeBanner = document.getElementById('welcome-banner');
-  var closeWelcomeX = document.getElementById('close-welcome-x');
-  var accountDetails = document.getElementById('account-details-cont');
-  var centerColumn = document.getElementById('center-column');
+var switchToDashboard = (function() {
+  var dashboardIcon = document.getElementById('dashboard-icon');
+  var transIcon = document.getElementById('trans-icon');
+  var mainElement = document.getElementById('main-page-content');
 
-  var makeWelcomeDisappear = function () {
-    welcomeBanner.style.display = 'none';
-    accountDetails.style.margin = '0px';
-    centerColumn.style.margin = '0px 34px 0px 0px';
-  }
-
-  function closeWelcomeOnClick () {
-    closeWelcomeX.addEventListener('click', makeWelcomeDisappear);
-  }
-
-  var dashboardHTML = `<h1 id="balancing-act-title"> Balancing Act </h1>
-  <div id="center-column">
+  var dashboardHTML = `
+  <h1 class="page-title"> Balancing Act </h1>
+  <div class="center-column">
     <header id="welcome-banner">
       <img id="close-welcome-x" src="assets/images/close.svg" />
       <h3 id="welcome-title"> Welcome, Oscar! </h3>
@@ -70,12 +61,12 @@ var dashboard = (function() {
     </ul>
   </div>
   <div id="right-column">
-    <section id="trans-table-cont">
+    <section class="trans-table-cont">
       <section>
         <h2 id="recent-trans-title"> Recent Transactions </h2>
         <button id="new-trans-button" class="main-button"> NEW TRANSACTION </button>
       </section>
-      <table id="transactions-table">
+      <table class="transactions-table">
         <tr>
           <th>Date</th>
           <th>Payee</th>
@@ -140,14 +131,12 @@ var dashboard = (function() {
     </section>
   </div>`
 
-  var dashboardIcon = document.getElementById('dashboard-icon');
-  var transIcon = document.getElementById('trans-icon');
-  var mainElement = document.getElementById('main-page-content');
-
   var toggleOnPageClass = function () {
     dashboardIcon.classList.add('on-page');
     transIcon.classList.remove('on-page');
     mainElement.innerHTML = dashboardHTML;
+    var closeWelcomeX = document.getElementById('close-welcome-x');
+    closeWelcomeX.addEventListener('click', closeWelcome.makeWelcomeDisappear);
   }
 
   function switchToDashboardOnClick () {
@@ -155,8 +144,6 @@ var dashboard = (function() {
   }
 
   return {
-    closeWelcomeOnClick: closeWelcomeOnClick,
     switchToDashboardOnClick: switchToDashboardOnClick
   };
-
 })();

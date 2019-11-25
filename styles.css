@@ -21,14 +21,14 @@ body {
   background-color: #F5F5F5
 }
 
-h1#balancing-act-title {
+h1.page-title {
   position: relative;
   top: 28px;
   font-size: 24px;
   margin-bottom: 40px;
 }
 
-button.main-button {
+.main-button {
   font-family: 'Biryani', sans-serif;
   padding: 4px 19px;
   background-color: #1CA3BA;
@@ -43,14 +43,14 @@ button.main-button {
   height: 28px;
 }
 
-button.main-button:hover {
+.main-button:hover {
   color: rgb(76, 161, 183);
   background-color: white;
   border: inset 1px #8ED1DC;
   cursor: pointer;
 }
 
-button.main-button:focus {
+.main-button:focus {
   outline:0;
 }
 
@@ -94,7 +94,7 @@ button.main-button:focus {
   Center Column CSS
 */
 
-#center-column {
+.center-column {
   float: left;
   margin: 10px 34px 0px 0px;
   width: 520px;
@@ -213,7 +213,7 @@ span.float-right {
   margin: 10px 34px 30px 34px;
 }
 
-section#trans-table-cont {
+section.trans-table-cont {
   padding: 25px;
   padding-top: 30px;
   background-color: white;
@@ -222,11 +222,10 @@ section#trans-table-cont {
   height: 100%;
 }
 
-h2#recent-trans-title {
-  display: inline;
+h2.section-title {
+  display: inline-block;
   font-size: 20px;
-  position: relative;
-  bottom: 5px;
+  margin-bottom: 5px;
 }
 
 button#new-trans-button {
@@ -237,31 +236,164 @@ button#new-trans-button {
   display: inline;
 }
 
-table#transactions-table {
+table.transactions-table {
   width: 445px;
   border-spacing: 0px;
   border-collapse: collapse;
 }
 
-table#transactions-table tr, th {
+
+ td, th {
   text-align: left;
   border-bottom: 1px solid #CCCCCC;
   font-size: 14px;
   height: 38px;
 }
 
-table#transactions-table th {
-  border-bottom: 1px solid rgb(246, 246, 246);
-}
-
-table#transactions-table tr td.trans-date {
+tr td.trans-date {
   width: 110px;
 }
 
-table#transactions-table tr td.trans-outflow {
+table.transactions-table tr td.trans-outflow {
   width: 70px;
 }
 
-table#transactions-table tr td.trans-inflow {
+table.transactions-table tr td.trans-inflow {
   width: 110px;
+}
+
+/*
+Transactions
+center column
+*/
+
+#main-transactions {
+  width: 535px;
+  margin-top: 11px;
+}
+
+#transactions-title {
+  display: inline-block;
+  position: static;
+  margin-top: 15px;
+  float: left;
+  width: 90%;
+  height: 60px;
+}
+
+#transaction-options {
+  display: inline-block;
+  width: 400px;
+  position: relative;
+  left: 260px;
+  bottom: 60px;
+}
+
+.trans-button {
+  width: 90px;
+  color: #1CA3BA;
+  background-color: white;
+  border: solid 1px #1CA3BA;
+  cursor: pointer;
+}
+
+#exp-trans-cont {
+  height: 470px;
+  overflow: scroll;
+  padding-top: 15px;
+}
+
+#transaction-options button.sel-trans-type {
+  width: 90px;
+  color: white;
+  background-color: #1CA3BA;
+  border: solid 1px #1CA3BA;
+  cursor: pointer;
+}
+
+#transactions-title {
+  margin-bottom: 7px;
+}
+
+table.expanded-transactions-table {
+  width: 100%;
+  border-spacing: 0px;
+}
+
+table.expanded-transactions-table td {
+  font-size: 12px;
+}
+
+table.expanded-transactions-table tr td.trans-acct {
+  width: 110px;
+}
+
+table.expanded-transactions-table tr td.trans-payee {
+  width: 140px;
+}
+
+table.expanded-transactions-table tr td.trans-inflow {
+  width: 70px;
+}
+
+table.expanded-transactions-table tr td.trans-outflow {
+  width: 80px;
+}
+
+/*
+  Add transaction
+  right column
+*/
+
+.new-trans-cont {
+  background-color: white;
+  text-align: center;
+  padding: 20px 60px 30px 60px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+  border-radius: 4px;
+  overflow: auto;
+  margin-left: 40px;
+  height: 460px;
+  width: 300px;
+}
+
+#new-trans-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#new-trans-form select, input {
+  display: block;
+  margin: 13px auto;
+  box-shadow: -2px -1px 4px rgba(0,0,0,0.1), 2px 3px 4px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  width: 100%;
+  height: 25px;
+  border-width: 0px;
+}
+
+form#new-trans-form select {
+  background-color: rgb(248, 248, 248);
+  font-family: 'Biryani', sans-serif;
+}
+
+form#new-trans-form label {
+  font-size: 12px;
+  float: left;
+}
+
+form#new-trans-form input {
+  font-size: 14px;
+}
+
+form#new-trans-form input#new-trans-button {
+  width: 120px;
+  font-size: 12px;
+  color: white;
+  background-color: #1CA3BA;
+  border: solid 1px #1CA3BA;
+  cursor: pointer;
+  float: left;
+  margin-top: 5px;
 }
