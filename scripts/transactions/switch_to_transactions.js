@@ -6,13 +6,15 @@ var switchToTransactions = (function () {
   var mainElement = document.getElementById('main-page-content');
 
   var transactionsHtml = `
-  <header>
-    <h1 class="page-title"> Transactions </h1>
-    <button class="main-button"> ALL </button>
-    <button class="main-button"> INFLOW </button>
-    <button class="main-button"> OUTFLOW </button>
+  <header id="transactions-title">
+    <h1 id="transactions-title" class="page-title"> Transactions </h1>
+    <section id="transaction-options">
+      <button class="main-button sel-trans-type"> ALL </button>
+      <button class="main-button"> INFLOW </button>
+      <button class="main-button"> OUTFLOW </button>
+    </section>
   </header>
-  <div class="center-column">
+  <div id="main-transactions" class="center-column">
     <section class="trans-table-cont">
       <table class="expanded-transactions-table">
         <tr>

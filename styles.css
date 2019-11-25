@@ -267,6 +267,47 @@ table.transactions-table tr td.trans-inflow {
 Transactions
 */
 
+#main-transactions {
+  width: 535px;
+}
+
+#transactions-title {
+  display: inline-block;
+  position: static;
+  margin-top: 15px;
+  float: left;
+  width: 90%;
+  height: 60px;
+}
+
+#transaction-options {
+  display: inline-block;
+  width: 400px;
+  position: relative;
+  left: 260px;
+  bottom: 55px;
+}
+
+#transaction-options button {
+  width: 90px;
+  color: #1CA3BA;
+  background-color: white;
+  border: solid 1px #1CA3BA;
+  cursor: pointer;
+}
+
+#transaction-options button.sel-trans-type {
+  width: 90px;
+  color: white;
+  background-color: #1CA3BA;
+  border: solid 1px #1CA3BA;
+  cursor: pointer;
+}
+
+#transactions-title {
+  margin-bottom: 7px;
+}
+
 table.expanded-transactions-table {
   width: 100%;
   border-spacing: 0px;
@@ -286,4 +327,8 @@ table.expanded-transactions-table tr td.trans-payee {
 
 table.expanded-transactions-table tr td.trans-inflow {
   width: 70px;
+}
+
+table.expanded-transactions-table tr td.trans-outflow {
+  width: 80px;
 }
