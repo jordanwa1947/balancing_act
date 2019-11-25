@@ -127,7 +127,7 @@ var switchToTransactions = (function () {
   </div>
   <div id="right-column">
     <section class="new-trans-cont">
-      <h2 class="section-title"> New Transaction </h2>
+      <h2 id="new-trans-title" class="section-title"> New Transaction </h2>
       <form id="new-trans-form">
         <label> Type of Transaction: </label>
         <select class="new-trans-select">
