@@ -5,8 +5,9 @@ var switchToDashboard = (function() {
   var transIcon = document.getElementById('trans-icon');
   var mainElement = document.getElementById('main-page-content');
 
-  var dashboardHTML = `<h1 id="balancing-act-title"> Balancing Act </h1>
-  <div id="center-column">
+  var dashboardHTML = `
+  <h1 class="page-title"> Balancing Act </h1>
+  <div class="center-column">
     <header id="welcome-banner">
       <img id="close-welcome-x" src="assets/images/close.svg" />
       <h3 id="welcome-title"> Welcome, Oscar! </h3>
@@ -59,7 +60,7 @@ var switchToDashboard = (function() {
     </ul>
   </div>
   <div id="right-column">
-    <section id="trans-table-cont">
+    <section class="trans-table-cont">
       <section>
         <h2 id="recent-trans-title"> Recent Transactions </h2>
         <button id="new-trans-button" class="main-button"> NEW TRANSACTION </button>
