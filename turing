@@ -1,0 +1,7 @@
+if @form == 'human'
+  @hungry = true
+  @form = 'wolf'
+elsif @form == 'wolf'
+  @hungry = false
+  @form = 'human'
+end

@@ -1,8 +1,10 @@
-import { closeWelcome } from './scripts/dashboard/close_welcome.js';
-import { switchToDashboard } from './scripts/dashboard/switch_to_dashboard.js';
-import { switchToTransactions } from './scripts/transactions/switch_to_transactions.js';
+import NavBar from './scripts/nav_bar/nav_bar.js';
+import DashboardPage from './scripts/dashboard/dashboard_page.js';
 
-closeWelcome.closeWelcomeOnClick();
-switchToDashboard.switchToDashboardOnClick();
+const mainElement = document.getElementById('main-page-content');
+const navBar = new NavBar(mainElement);
+const dash = new DashboardPage(mainElement);
 
-switchToTransactions.switchToTransactionsOnClick();
+document.onload = dash.insertDashHTML();
+document.onload = navBar.switchToDashboard();
+document.onload = navBar.switchToTransaction();
