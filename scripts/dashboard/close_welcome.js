@@ -1,8 +1,6 @@
 export { closeWelcome }
 
 var closeWelcome = (function() {
-  var closeWelcomeX = document.getElementById('close-welcome-x');
-
   // creates a style element, appends it to the head element
   // and inserts rules to the stylesheet so the styles persist
   var makeWelcomeDisappear = function () {
@@ -14,11 +12,11 @@ var closeWelcome = (function() {
   }
 
   function closeWelcomeOnClick () {
+    var closeWelcomeX = document.getElementById('close-welcome-x');
     closeWelcomeX.addEventListener('click', makeWelcomeDisappear);
   }
 
   return {
     closeWelcomeOnClick: closeWelcomeOnClick,
-    makeWelcomeDisappear: makeWelcomeDisappear
   };
 })();
