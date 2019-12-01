@@ -121,26 +121,44 @@ export var transactionsHtml = `
 <div id="right-column">
   <section class="new-trans-cont">
     <h2 id="new-trans-title" class="section-title"> New Transaction </h2>
-    <form id="new-trans-form">
-      <label> Type of Transaction: </label>
-      <select class="new-trans-select">
-        <option> Expense </option>
-      </select>
-      <label> Category: </label>
-      <select class="new-trans-select">
-        <option> - Select One - </option>
-      </select>
-      <label> Account from: </label>
-      <select class="new-trans-select">
-        <option> - Select One - </option>
-      </select>
-      <label> Payee: </label>
-      <input class="new-trans-field" type="text" />
-      <label> Outflow: </label>
-      <input class="new-trans-field" type="text" />
-      <label> Inflow: </label>
-      <input class="new-trans-field" type="text" />
-      <input id="new-trans-button" class="main-button" type="submit" value="Log Expense"/>
-    </form>
+    <fieldset>
+      <form id="new-trans-form">
+        <label for="type-of-trans"> Type of Transaction: </label>
+        <select id="type-of-trans" class="new-trans-select">
+          <option value="outflow"> Outflow </option>
+          <option value="inflow"> Inflow </option>
+        </select>
+
+        <label for="category"> Category: </label>
+        <select id="category" class="new-trans-select">
+          <option value="bills"> Bills </option>
+          <option value="grocery"> Grocery </option>
+          <option value="fun"> Fun </option>
+          <option value="paycheck"> Paycheck </option>
+          <option value="gas"> Gas </option>
+        </select>
+
+        <label for="account"> Account from: </label>
+        <select id="account" class="new-trans-select">
+          <option value="checking"> Checking </option>
+          <option value="savings"> Savings </option>
+          <option value="amazon-credit"> Amazon Credit </option>
+          <option value="southwest-credit"> Southwest Credit </option>
+        </select>
+
+        <label for="payee"> Payee: </label>
+        <input id="payee" class="new-trans-field" type="text">
+
+        <label for="amount"> Amount: </label>
+        <input id="amount" class="new-trans-field amount-field" type="text">
+
+        <label for="memo"> Memo (optional): </label>
+        <input id="memo" class="new-trans-field" type="text">
+
+        <input id="new-trans-button" class="main-button" type="submit" value="Log Expense" onclick="return false;">
+      </form>
+    </fieldset>
+    <div id="msg-container">
+    </div>
   </section>
 </div>`
