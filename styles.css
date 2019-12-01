@@ -351,7 +351,6 @@ table.expanded-transactions-table tr td.trans-outflow {
   padding: 20px 60px 30px 60px;
   box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
   border-radius: 4px;
-  overflow: auto;
   margin-left: 40px;
   height: 460px;
   width: 300px;
@@ -396,4 +395,29 @@ form#new-trans-form input#new-trans-button {
   cursor: pointer;
   float: left;
   margin-top: 5px;
+}
+
+#message-container {
+  text-align: left;
+}
+
+.transaction-msg {
+  background-color: rgb(233,254,216);
+  display: block;
+  width: 400px;
+  font-size: 12px;
+  position: relative;
+  right: 60px;
+  bottom: 9px;
+  padding: 10px;
+  text-align: left;
+}
+
+#close-trans-msg {
+  float: right;
+  width: 8px;
+  height: 8px;
+  margin-top: 5px;
+  margin-right: 5px;
+  cursor: pointer;
 }
