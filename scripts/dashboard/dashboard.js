@@ -5,6 +5,7 @@ import { dashboardHTML } from './dash_html.js';
 var dashboard = (function() {
   var dashboardIcon = document.getElementById('dashboard-icon');
   var transIcon = document.getElementById('trans-icon');
+  var profileIcon = document.getElementById('profile-icon');
   var mainElement = document.getElementById('main-page-content');
 
   function initializeDashboard () {
@@ -17,6 +18,7 @@ var dashboard = (function() {
     dashboardIcon.addEventListener('click', function () {
       dashboardIcon.classList.add('on-page');
       transIcon.classList.remove('on-page');
+      profileIcon.classList.remove('on-page');
       initializeDashboard();
     });
   }
