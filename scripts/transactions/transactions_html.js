@@ -145,16 +145,18 @@ export var transactionsHtml = `
           <option value="amazon-credit"> Amazon Credit </option>
           <option value="southwest-credit"> Southwest Credit </option>
         </select>
-
-        <label for="payee"> Payee: </label>
-        <input id="payee" class="new-trans-field" type="text">
-
-        <label for="amount"> Amount: </label>
-        <input id="amount" class="new-trans-field amount-field" type="text">
-
-        <label for="memo"> Memo (optional): </label>
-        <input id="memo" class="new-trans-field" type="text">
-
+        <div>
+          <label for="payee"> Payee: </label>
+          <input id="payee" class="new-trans-field" type="text">
+        </div>
+        <div>
+          <label for="amount"> Amount: </label>
+          <input id="amount" class="new-trans-field amount-field" type="text">
+        </div>
+        <div>
+          <label for="memo"> Memo (optional): </label>
+          <input id="memo" class="new-trans-field" type="text">
+        </div>
         <input id="new-trans-button" class="main-button" type="submit" value="Log Expense" onclick="return false;">
       </form>
     </fieldset>
