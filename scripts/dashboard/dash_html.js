@@ -21,7 +21,7 @@ export var dashboardHTML = `
   </section>
   <h2 id="accounts-title"> Accounts </h2>
   <button id="accounts-button" class="main-button"> MANAGE ACCOUNTS </button>
-  <ul id="accounts-list">
+  <ul class="accounts-list">
     <li class="acct-item acct-checking">
       <img class="checking-icon account-icon" src="assets/images/checking.svg" />
       <h4 class="acct-title"> Wells Fargo </h4>
@@ -52,7 +52,7 @@ export var dashboardHTML = `
     </li>
   </ul>
 </div>
-<div id="right-column">
+<div class="right-column">
   <section class="trans-table-cont">
     <section>
       <h2 id="recent-trans-title"> Recent Transactions </h2>
