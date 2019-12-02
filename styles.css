@@ -90,6 +90,10 @@ h1.page-title {
   margin-top: 256px;
 }
 
+.nav-links img:hover {
+  border-left: solid 3px #1CA3BA;
+}
+
 /*
   Center Column CSS
 */
@@ -164,7 +168,7 @@ button#accounts-button {
   float: right;
 }
 
-ul#accounts-list li.acct-item {
+ul.accounts-list li.acct-item {
   background-color: white;
   height: 60px;
   width: 520px;
@@ -174,11 +178,11 @@ ul#accounts-list li.acct-item {
   border-radius: 4px;
 }
 
-ul#accounts-list li.acct-checking {
+ul.accounts-list li.acct-checking {
   margin-top: 6px;
 }
 
-ul#accounts-list h4.acct-title {
+ul.accounts-list h4.acct-title {
     text-align: center;
     position: relative;
     bottom: 7px;
@@ -186,7 +190,7 @@ ul#accounts-list h4.acct-title {
     margin-left: 68px;
 }
 
-ul#accounts-list h4.acct-type {
+ul.accounts-list h4.acct-type {
   float: left;
   width: 140px;
   margin-top: 20px;
@@ -207,7 +211,7 @@ span.float-right {
   Right Column CSS
 */
 
-#right-column {
+.right-column {
   float: left;
   width: 496px;
   margin: 10px 34px 30px 34px;
@@ -427,4 +431,146 @@ form#new-trans-form input#new-trans-button {
   background-color: rgb(245, 69, 66);
   border-radius: 5px;
   color: white;
+}
+
+/*
+  profile page
+*/
+
+#center-profile-col {
+  width: 400px;
+}
+
+#profile-left-col {
+  width: 630px;
+}
+
+.profile-title {
+  font-size: 24px;
+  margin: 20px 0px;
+}
+
+#account-info {
+  background-color: white;
+  padding: 25px;
+  height: 150px;
+  padding-right: 35px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+  border-radius: 4px;
+}
+
+#account-info p{
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#edit-acct-info {
+  float: right;
+  margin-top: 15px;
+  font-size: 12px;
+  padding: 6px 10px;
+  height: 30px;
+}
+
+#account-container {
+  background-color: white;
+}
+
+#add-account {
+  background-color: white;
+  padding: 15px;
+  margin-top: 10px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+  border-radius: 4px;
+}
+
+#add-acct-title {
+  margin-bottom: 20px;
+}
+
+#add-acct-form {
+  display: flex;
+}
+
+#add-acct-form span {
+  margin-right: 25px;
+  font-size: 14px;
+  height: 60px;
+}
+
+.add-acct-field {
+  margin-top: 0px;
+  margin-bottom: 7px;
+}
+
+#add-acct-form select {
+  bottom: 20px;
+  display: block;
+  margin-right: 0px;
+  font-size: 13px;
+  position: relative;
+  height: 28px;
+  border-width: 0px;
+  box-shadow: -2px -1px 4px rgba(0,0,0,0.1), 2px 3px 4px rgba(0,0,0,0.1);
+}
+
+#add-acct-button {
+  font-size: 13px;
+  width: 140px;
+  margin: 0px;
+  margin-top: 20px;
+  height: 32px;
+  padding-top: 6px;
+}
+
+#acct-nickname {
+  width: 150px;
+}
+
+#acct-type {
+  width: 150px;
+}
+
+#profile-accts li{
+  display: flex;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+#profile-accts li h4.acct-title {
+  margin: 26px 0px 26px 18px;
+  font-size: 14px;
+}
+
+#acct-status {
+  margin-top: 20px;
+  margin-right: 38px;
+}
+
+#profile-accts span{
+  width: 30%;
+}
+
+.active-acct {
+  color: rgb(75,138,56);
+}
+
+#profile-accts button{
+  margin-top: 20px;
+  margin-left: 15px;
+  width: 60px;
+  height: 22px;
+  padding: 2px;
+}
+
+.delete-acct {
+  background-color: rgb(221,78,63);
+  border-color: rgb(222,87,93);
+}
+
+.delete-acct:hover {
+  background-color: white;
+  color: rgb(222,87,93);
+  border-color: rgb(222,87,93);
 }
