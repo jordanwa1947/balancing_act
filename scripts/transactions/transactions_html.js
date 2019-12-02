@@ -118,7 +118,7 @@ export var transactionsHtml = `
     </table>
   </section>
 </div>
-<div id="right-column">
+<div class="right-column">
   <section class="new-trans-cont">
     <h2 id="new-trans-title" class="section-title"> New Transaction </h2>
     <fieldset>
